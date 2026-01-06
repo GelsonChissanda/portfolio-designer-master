@@ -1,0 +1,333 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#menu ul {
+  padding: 0;
+  margin-left: 40px;
+  margin-top: 0;
+  list-style: none;
+}
+
+#menu {
+  display: flex;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  padding: 14px 30px;
+  margin: 0;
+  margin-top: 0;
+  overflow: hidden;
+}
+
+#menu ul li {
+  display: inline;
+}
+
+#menu ul li a {
+  padding: 2px 30px;
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+}
+
+#menu ul li a:hover {
+  color: rgb(241, 72, 72);
+  cursor: pointer;
+}
+
+#menu img {
+  padding: 0;
+  margin-left: 20px;
+  width: 200px;
+  height: 200px;
+  border: 0;
+  border-radius: 50%;
+}
+
+body {
+  background-color: black;
+}
+
+h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+#flyers {
+  margin-top: 50px;
+}
+
+#CartoesVisita {
+  margin-top: 150px;
+}
+
+#Logos {
+  margin-top: 150px;
+}
+
+#flyers img {
+  height: 200px;
+  width: 250px;
+  padding: 8px;
+  border-radius: 20%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#flyers img:hover {
+  opacity: 0.7;
+}
+
+#Logos img {
+  height: 200px;
+  width: 250px;
+  border-radius: 20%;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#Logos img:hover {
+  opacity: 0.7;
+}
+
+#CartoesVisita img {
+  height: 200px;
+  width: 250px;
+  padding: 8px;
+  border-radius: 20%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#CartoesVisita img:hover {
+  opacity: 0.7;
+}
+
+h3 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  color: white;
+}
+
+#quemsoueu {
+  margin-top: 200px;
+}
+
+#contato {
+  margin-top: 200px;
+}
+
+#quemsoueu img {
+  margin-top: -100px;
+  height: 300px;
+  width: 250px;
+  border: none;
+  border-radius: 30%;
+  float: left;
+  margin-right: 10px;
+}
+
+#quemsoueu h3 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/*Visual da janela Modal*/
+.modalVisual {
+  /*Classe*/
+  display: none; /*Esconder a janela por padrão*/
+  position: fixed; /*Permanecer na posição fixa*/
+  z-index: 1; /*Posicionar no topo da pilha*/
+  padding-top: 100px; /*Margem interna superior*/
+  left: 0; /*Posição X*/
+  top: 0; /*Posição Y*/
+  width: 100%; /*Largura total da tela*/
+  height: 100%; /*Altura total da tela*/
+  overflow: auto; /*Barra de rolagem se necessário*/
+  background-color: rgba(0, 0, 0, 0.8); /*Cor de fundo e opacidade de 80%*/
+}
+
+/*Conteúdo da Janela Modal (imagem)*/
+.modalConteudo {
+  /*Classe*/
+  margin: auto; /*Margens em auto para que o conteúdo fique no centro*/
+  display: block; /*Para que ocupe toda a linha e o próximo item passe para alinha de baixo*/
+  width: 100%; /*Largura total disponível*/
+  max-width: 800px; /*Largura máxima permitida, então width:100%; é igual a 800px*/
+}
+
+/*Texto da Imagem*/
+#txtImg {
+  margin: auto; /*Centralizar o conteúdo*/
+  display: block; /*Para que ocupe toda a linha e o próximo item passe para alinha de baixo*/
+  width: 80%; /*Largura*/
+  max-width: 700px; /*Largura máxima permitida*/
+  text-align: center; /*Alinhamento do texto ao centro*/
+  color: #ccc; /*Cor do texto*/
+  padding: 10px 0; /*Margem interna*/
+  height: 150px; /*Altura*/
+}
+
+/* Botão X para fechar */
+.fechar {
+  /*Classe*/
+  position: absolute; /*Permite o posicionamento do element usando top e left*/
+  top: 15px; /*Posição Y*/
+  right: 35px; /*Posição direita*/
+  color: #fff; /*Cor do texto*/
+  font-size: 40px; /*Tamanho da fonte*/
+  cursor: pointer; /*Tipo do cursor*/
+}
+
+#subir {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  margin-right: 30px;
+  font-size: 40px;
+  text-decoration: none;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* Contact card styles */
+.section-title {
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.contact-card-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.contact-card {
+  background: #111;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  width: min(760px, 96%);
+  border-radius: 10px;
+  overflow: hidden;
+  color: #ddd;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+}
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.03),
+    rgba(255, 255, 255, 0.01)
+  );
+}
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.dot.red {
+  background: #ff5f56;
+}
+.dot.yellow {
+  background: #ffbd2e;
+}
+.dot.green {
+  background: #27c93f;
+}
+.card-title {
+  font-weight: 700;
+  margin-left: 6px;
+  color: #fff;
+}
+.card-body {
+  padding: 18px;
+}
+.contact-label {
+  margin: 8px 0;
+  color: #bbb;
+}
+.copy-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #0f0f0f;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 540px;
+}
+.email-display {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  font-weight: 500;
+}
+.copy-btn {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #fff;
+  padding: 6px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.copy-feedback {
+  margin-left: 8px;
+  color: #6ee7b7;
+  font-weight: 600;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+.copy-container.copied .copy-feedback {
+  opacity: 1;
+}
+.divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.04);
+  margin: 14px 0;
+  border-radius: 2px;
+}
+.card-socials {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.card-socials a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 10px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 6px;
+}
+.card-footer {
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.02);
+  color: #bbb;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 14px 8px;
+  color: #ccc;
+}
+
+@media (max-width: 600px) {
+  #menu img {
+    width: 84px;
+    height: 84px;
+  }
+  .contact-card {
+    width: 94%;
+  }
+}
